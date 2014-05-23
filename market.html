@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Market</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/market.css">
+</head>
+
+<body class="container-fluid">
+	<div class="row">
+		<div class="red col-md-2">1st div</div>
+		<div class="green col-md-2">2nd div</div>
+		<div class="red col-md-8">3rd div</div>
+	</div>
+</body>
+
+
+<div class="alert alert-danger">Form contains some errors</div>
+<div class="alert alert-success">Successflut subimtted</div>
+<form class="form-horizontal" action="http://localhost:8081/admin/employee" method="POST">
+	<div class="form-group">
+		<label class="col-sm-2 control-label">Name</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="name">
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-2 control-label">Email Address</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="email">
+		</div>
+	</div>
+
+	<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-success">Create</button>
+    </div>
+  </div>
+</form>
+
+
+<img src="http://placehold.it/150x150" class="img-circle">
+</html>

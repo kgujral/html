@@ -1,0 +1,73 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+h1 {
+	background-color: blue;
+	margin: 0;
+	color: #CBFF45;
+}
+
+.heading {
+	color: pink;
+}
+
+p.heading {
+	font-size: 32px;
+}
+
+#blue {
+	color: blue;
+}
+
+.blue {
+	color: blue;
+}
+
+
+ul li {
+	font-size: 36px;
+}
+
+ul.fruits {
+	color: red;
+}
+
+ul.animals {
+	color: green;
+}
+
+ul.fruits li:nth-child(2n) {
+	color: purple;
+}
+
+ul.fruits li.mango {
+	color: yellow;
+}
+
+.left {
+	float: left;
+	width: 50%;
+}
+
+.right {
+	float: right;
+	width: 50%;
+}
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: green;
+}
+
+.left.green {
+	font-size: 32px;
+}
+
+.container {
+	width: 50%;
+}
