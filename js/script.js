@@ -23,22 +23,16 @@ $('#animate').click(function() {
 
 
 
-$('#submitForm').click(function() {
-
+$('#submitForm').click(function(e) {
+	e.preventDefault();
 	var name = $('#name').val();
 	var email = $('#email').val();
-
 	$.ajax({
 		type: 'POST',
+		dataType: 'json',
 		url: 'http://localhost:8081/admin/employee',
-		data: $.parseJSON({'name': name, 'email': email}),
-		contentType: 'application/json',
-	}).success(function(resp) {
-		alert(2);
-		return false;
-	}).error(function(resp) {
-		alert(1);
-		return false;
+		data: JSON.stringify({"name": name, "email": email}),
+		contentType: 'application/json'
 	});
 
 
