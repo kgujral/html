@@ -5,6 +5,10 @@ angular.module('hello', [])
 
 	$scope.content = "Karan";
 
+	$scope.callAlertButtonClick = function() {
+		alert('Chhutti');
+	};
+
 });
 
 angular.module('world', [])
